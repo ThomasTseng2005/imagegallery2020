@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="page-container">
+    <div class="header-jumbotron">
+        <h1 class="header-h1"> <i class="fas fa-camera-retro"></i> LEO'S IMAGE GALLERY </h1>
+        <p>AN IMAGE GALLERY MADE BY LEO LIN. 😎</p>
+    </div>
+    <div id="image-grid">
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/one.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/two.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/three.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/four.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/five.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/six.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/seven.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/eight.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/nine.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/ten.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/eleven.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='leo/twelve.jpg') }}" alt="Photo">
+        </div>
+    </div>
+</div>
+<div class="footer-copyright text-center">
+    <p>© Leo Lin. All rights reserved.</p>
+</div>
+
+{% endblock %}

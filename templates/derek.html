@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="page-container">
+    <div class="header-jumbotron">
+        <h1 class="header-h1"><i class="fas fa-camera-retro"></i> DEREK'S IMAGE GALLERY </h1>
+        <p>An image gallery made by Derek Hsu.</p>
+    </div>
+    <div id="image-grid">
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/one.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/two.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/three.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/four.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/five.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/six.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/seven.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/eight.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/nine.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/ten.jpg') }}" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/eleven.jpg') }}"" alt="Photo">
+        </div>
+        <div class="image-wrapper">
+            <img src="{{ url_for('static',filename='derek/twelve.jpg') }}" alt="Photo">
+        </div>
+    </div>
+</div>
+<div class="footer-copyright text-center">
+    <p>© Derek Hsu. All rights reserved</p>
+</div>
+
+{% endblock %}

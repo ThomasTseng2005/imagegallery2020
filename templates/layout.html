@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='style.css') }}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='normalize.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-fixed-top" id="main-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-image-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Image Gallery</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-image-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/derek" class="navbar-links">Derek</a></li>
+              <li><a href="/leo" class="navbar-links">Leo</a></li>
+              <li><a href="#" class="navbar-links">About</a></li>
+              <li><a href="#" class="navbar-links">Contact</a></li>
+          </ul>
+        </div>
+    </div>
+</nav>
+    {% block content %}
+    {% endblock  %}
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
